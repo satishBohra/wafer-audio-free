@@ -1,0 +1,213 @@
+.wafer-audio-free-admin-page {
+    background-color: white;
+    padding: 15px;
+    padding-bottom: 20px;
+    border: 1px solid #b5b5b5;
+    width: 100%;
+    max-width: 750px;
+    margin-top: 15px;
+    border-radius: 4px;
+    position: relative;
+    user-select: none;
+}
+.wafer-audio-free-admin-page ::selection {
+    background-color: rgba(32, 64, 81, .3);
+    color: black;
+}
+.wafer-audio-free-admin-page h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: .02em;
+    color: #204051;
+}
+.wafer-audio-free-admin-page p {
+    color: #204051;
+}
+.wafer-audio-free-signature {
+    position: absolute;
+    bottom: 15px;
+    right: 18px;
+}
+.wafer-audio-free-signature a {
+    font-size: 10px;
+    text-decoration: none;
+    color: #204051;
+    opacity: 1;
+    transition: 85ms;
+}
+.wafer-audio-free-signature a:hover {
+    opacity: .8;
+    transition: 85ms;
+}
+.wafer-audio-free-btn {
+    background-color: #204051;
+    border: 2px solid #204051;
+    padding: 5px 3px 2px 3px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    filter: brightness(1);
+    transition: 85ms;
+}
+.wafer-audio-free-btn:hover {
+    filter: brightness(.8);
+    transition: 85ms;
+}
+span.dashicons.dashicons-trash {
+    font-size: 20px;
+    position: relative;
+    top: -1.6px;
+    left: 1px;
+}
+.wafer-audio-free-btn.saving {
+    padding: 0 18px;
+    line-height: 31px;
+    height: 31px;
+    border: none;
+    margin-top: 20px;
+}
+.wafer-track span.dashicons.dashicons-trash {
+    font-size: 20px;
+    position: relative;
+    top: 0.5px;
+    left: 1px;
+}
+.wafer-audio-free-players {
+    border: 1px solid #b5b5b5;
+    padding: 10px;
+    overflow-y: scroll;
+    width: 100%;
+    max-height: 350px;
+    box-sizing: border-box;
+}
+.wafer-audio-free-toolbar {
+    margin-bottom: 13px;
+}
+.wafer-audio-free-player {
+    background-color: #fbfbfb;
+    border: 1px solid #b5b5b5;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.wafer-audio-free-player:nth-last-of-type(1) {
+    margin-bottom: 0;
+}
+.open-select-frame {
+    background-color: #204051;
+    border: 2px solid #204051;
+    padding: 5px 3px 2px 3px;
+    color: white;
+    border-radius: 4px;
+    padding: 4.5px;
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    position: relative;
+    top: 0.5px;
+    margin-left: 4px;
+    filter: brightness(1);
+    transition: 85ms;
+}
+.open-select-frame:hover {
+    filter: brightness(.8);
+    transition: 85ms;
+}
+.wafer-audio-free-player-toolbar {
+    padding: 10px 0;
+    position: relative;
+}
+.wafer-audio-free-select-player {
+    position: absolute;
+    top: 5px;
+    right: -3px;
+}
+.dashicons-move {
+    cursor: grab;
+    margin-right: 5px;
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
+}
+.wafer-track {
+    font-size: 0;
+    line-height: 0;
+    margin: 8px 0;
+}
+.wafer-track input {
+    border-radius: 0;
+    font-size: 14px;
+    width: 27.7%;
+    margin-right: 3px;
+}
+.wafer-track button {
+    font-size: 14px;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: -.5px;
+    margin-right: 5px;
+    padding: 3px;
+}
+input.wafer-audio-free-player-title {
+    border: 1px solid #fbfbfb;
+    background-color: transparent;
+    font-weight: 400;
+    box-sizing: border-box;
+    border-radius: 0;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+input.wafer-audio-free-player-title:focus{
+    border-color: #fbfbfb;
+    box-shadow: none;
+    border-bottom: 1px solid #204051;
+    outline: none;
+}
+.wafer-track input[type="text"]:focus {
+    border-color: #204051;
+    box-shadow: 0 0 0 1px #204051;
+    outline: 2px solid transparent;
+}
+.wafer-audio-free-admin-page input[type="checkbox"]:focus {
+    border: 1px solid #7e8993;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+    box-shadow: none;
+    outline: none;
+}
+.wafer-audio-free-admin-page input[type="checkbox"]:checked {
+    border-color: #204051;
+    box-shadow: 0 0 0 1px #204051;
+    outline: 2px solid transparent;
+}
+.wafer-audio-free-admin-page input[type="checkbox"]:checked::before {
+    filter: brightness(.5);
+}
+.save {
+    position: absolute;
+    top: 28px;
+    left: 250px;
+}
+.save::after {
+    content: '';
+    background-color: green;
+    display: block;
+    position: absolute;
+    right: -15px;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+.save.active::after {
+    background-color: orange;
+}
+code {
+    user-select: all;
+    -webkit-user-select: all;
+}
